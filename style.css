@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+}
+h1::before{
+    content: 'Hey! ';
+    color: limegreen;
+    font-size: 30px;
+}
+h1::after{
+    content: ' do you know?';
+    color: orchid;
+    font-size: 30px;
+}
+blockquote{
+    font-size: 20px;
+}
+blockquote::before{
+    content: open-quote;
+    color: red;
+    font-size: 1.5em;
+}
+blockquote::after{
+    content: close-quote;
+    color: red;
+    font-size: 1.5em;
+}
+.quote-title{
+    display: inline-block;
+}
+
+.quote-title::after, 
+.quote-title:hover::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: greenyellow;
+    display: block;
+}
+.required label::after { 
+    content:'*'; 
+    color: red;
+}
+.required{
+    height: 300px;
+    text-align: center;
+}
+.asterik{
+    display: inline-block;
+}
+.asterik::after,
+.asterik:hover::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    display: block;
+}
+.button{
+    background-color:seagreen;
+    color: white ;
+}
